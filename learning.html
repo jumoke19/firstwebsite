@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* root var */
+      :root {
+        --color-green: #00d982;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu {
+        padding: 15px;
+        font-size: 30px;
+        color: grey;
+      }
+
+      .links {
+        display: flex;
+        direction: rtl;
+        list-style: none;
+      }
+      .links > li {
+        padding: 10px;
+      }
+
+      li.md-visible,
+      li.lg-visible {
+        display: none;
+      }
+
+      @media screen and (min-width: 768px) {
+        li.md-visible {
+          display: block;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        li.lg-visible {
+          display: block;
+        }
+      }
+
+      .free-trial {
+        color: green;
+        padding-right: 15px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      main {
+        background-color: var(--color-green);
+      }
+
+      @media screen and (min-width: 992px) {
+        main {
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+      }
+
+      section.one {
+        color: white;
+      }
+
+      @media screen and (min-width: 992px) {
+        section.one,
+        section.two {
+          padding: 10%;
+        }
+
+        section.two {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      section.one h4 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      section.two {
+      }
+      
+     h2{
+        text-align: center;
+    font-size: 40px;
+    max-width: 100%;
+    color: brown;
+    font-weight: bold;
+}
+     .para3 p {
+        padding-right: 25px;
+        color: blue;
+        @media only screen and (max-width: 992px) .para3{
+            text-align: center;
+        max-width: 100%;
+        }
+        
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    
+      /* section.two .top-of-form {
+        width: 100%;
+        text-align: center;
+        background-color: grey;
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+        padding: 7.5px;
+      } */
+
+       .form {
+        width: 100%;
+        padding: 15px;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+      }
+
+      @media screen and (min-width: 768px) {
+        section.two .form form {
+          display: grid;
+          grid-template-columns: auto auto;
+          column-gap: 15px;
+        }
+      }
+
+      section.two .form .form-input > label,
+      section.two .form .form-input > input {
+        width: 100%;
+        display: block;
+      }
+
+      section.two .form .form-input > label {
+        margin-bottom: 5px;
+      }
+
+      section.two .form .form-input > input {
+        margin-bottom: 10px;
+      }
+
+      section.two .form button {
+        width: 100%;
+        padding: 10px;
+        background-color: var(--color-green);
+        color: white;
+        border: 0;
+        border-radius: 5px;
+      }
+
+      .btn-sec {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <i class="fa fa-bars fa-6"></i>
+    
+       <ul>
+        <li>
+           <a href>Features</a> 
+        </li>
+        <li>
+            <a href=>Business</a>
+        </li>
+        <li>
+            <a href=>Market Place</a>
+        </li>
+        <li>
+            <a href=>Explore</a>
+        </li>
+        <li>
+            <a href=>Pricing</a>
+        </li>
+       </ul> 
+      </div>
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <ul class="links">
+        <li class="md-visible">Sign In</li>
+        <li class="sm-visible">or</li>
+        <li class="lg-visible">Sign Up</li>
+        <li>
+            <input class="input1" type="search" placeholder=" Search Github">   
+        </li>
+      </ul>
+        </header>
+        </div>
+    </nav>
+
+    <!-- <main>
+      <section class="one">
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem laborum
+          obcaecati, esse illo, debitis corporis, non excepturi temporibus quae
+          natus voluptate eius facere. Incidunt iusto fuga blanditiis
+          consectetur aspernatur vitae!
+        </p>
+      </section> -->
+
+      <section class="two">
+      <div class="head">
+        <h2>Built for Developers<br>
+        </h2>
+        <p class="para3" style="padding-right: 25px; color: rgb(121, 119, 119) ;">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem laborum
+          obcaecati, esse illo, debitis corporis, non excepturi temporibus quae
+          natus voluptate eius facere. Incidunt iusto fuga blanditiis
+          consectetur aspernatur vitae!
+        </p>
+         </div>
+
+          <div class="form">
+            <form action="">
+              <div class="form-input">
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first"  placeholder=" Enter your first name" />
+              </div>
+              <div class="form-input">
+                <label for="last">Last Name</label>
+                <input type="text" name="last" id="last" placeholder=" Enter your last name" />
+              </div>
+              <div class="form-input">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder=" Example@gmail.com" />
+              </div>
+              <div class="form-input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder=" Create a password" />
+              </div>
+              <p> Use a strong and unique password for the best security</p>
+              <button class="button1" type="button">Sign in for Github</button>
+              <p style="text-align: center;">
+                  By creating an account, you agree to the 
+                  <a href>Terms of Service </a> 
+                  For more information, see the
+                  <a href> Privacy Statement </a>
+                  </p>
+              <div class="btn-sec">
+                <button type="submit">Claim Your Free Trial</button>
+                <div><small> terms and c apply </small></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
